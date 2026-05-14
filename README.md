@@ -10,13 +10,17 @@ That means it is free to use, modify, and distribute, including in commercial se
 
 ### Attribution / Citation Requested
 
-If this repository materially informs your work, derivative framework, skill library, internal method, publication, or public-facing tool, please preserve attribution to the original project:
+Everything in this repository is free to use.
+
+I am a clinician and researcher, and part of the point of publishing this work openly is to help build a real community of practice around agentic research. If this repository materially informs your work, derivative framework, skill library, internal method, publication, training material, or public-facing tool, all I ask is that you cite or attribute the original project:
 
 - **Agentic Research Patterns**
 - **Author:** benthepsychologist / Benjamin Armstrong
 - **Repo:** https://github.com/benthepsychologist/agentic-research-patterns
 
-The legal terms are in the Apache-2.0 license. The citation request is expressed through the [NOTICE](NOTICE) file and [CITATION.cff](CITATION.cff).
+That attribution helps build the field, makes it easier for people to find related work, and helps me build credibility for this work outside of clinical practice.
+
+The legal terms are in the Apache-2.0 license. The attribution request is expressed through the [NOTICE](NOTICE) file and [CITATION.cff](CITATION.cff).
 
 ## Why a Repo
 
