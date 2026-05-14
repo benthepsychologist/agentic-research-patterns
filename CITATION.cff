@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "Agentic Research Patterns"
+message: "If you use this project, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Armstrong
+    given-names: Benjamin
+    alias: benthepsychologist
+repository-code: "https://github.com/benthepsychologist/agentic-research-patterns"
+url: "https://github.com/benthepsychologist/agentic-research-patterns"
+license: Apache-2.0
+version: "0.1.0"
+date-released: "2026-05-14"
+abstract: "A pattern library, skill set, and tutorial repo for structured multi-pass research with AI agents."
+keywords:
+  - ai agents
+  - research
+  - llm
+  - agentic research
+  - deep research
+  - prompt design
+preferred-citation:
+  type: software
+  authors:
+    - family-names: Armstrong
+      given-names: Benjamin
+      alias: benthepsychologist
+  title: "Agentic Research Patterns"
+  repository-code: "https://github.com/benthepsychologist/agentic-research-patterns"
+  url: "https://github.com/benthepsychologist/agentic-research-patterns"
+  version: "0.1.0"
+  date-released: "2026-05-14"

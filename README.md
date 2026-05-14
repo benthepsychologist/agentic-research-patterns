@@ -2,6 +2,22 @@
 
 Patterns, skills, principles, tutorials, and examples for structured research with AI agents.
 
+## License
+
+This project is licensed under [Apache-2.0](LICENSE).
+
+That means it is free to use, modify, and distribute, including in commercial settings.
+
+### Attribution / Citation Requested
+
+If this repository materially informs your work, derivative framework, skill library, internal method, publication, or public-facing tool, please preserve attribution to the original project:
+
+- **Agentic Research Patterns**
+- **Author:** benthepsychologist / Benjamin Armstrong
+- **Repo:** https://github.com/benthepsychologist/agentic-research-patterns
+
+The legal terms are in the Apache-2.0 license. The citation request is expressed through the [NOTICE](NOTICE) file and [CITATION.cff](CITATION.cff).
+
 ## Why a Repo
 
 Most people run research in chat windows. Chat is disposable. You lose context between sessions, you copy-paste artifacts around, and six weeks later you can't find the competitive analysis you spent three hours on.
