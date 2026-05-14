@@ -1,0 +1,46 @@
+# [Project Name] — Agent Guide
+
+<!-- This is an example CLAUDE.md. Claude Code reads this file automatically
+     at the start of every session. Customize it for your project. -->
+
+## What This Project Is
+
+<!-- 2-3 sentences. What are you researching or building? What decision does
+     this support? What's the goal? -->
+
+## Current State
+
+<!-- What exists so far. Examples:
+     - "Just started — initiation doc is drafted, no research passes yet"
+     - "Through Pass 3 — landscape and competitive analysis done, starting feasibility"
+     - "Research complete — building MVP from requirements in docs/requirements/" -->
+
+## My Background
+
+<!-- What you know and what you don't. This calibrates how the agent explains
+     things and what it assumes you understand. -->
+
+## Research Conventions
+
+- Write all research output to `docs/research/` as numbered markdown files
+  (e.g., `01-landscape.md`, `02-competitive-analysis.md`)
+- Cite all sources with inline markdown links — no unsourced claims
+- Use tables for comparisons and structured data
+- Each file should stand alone — include enough context that someone reading
+  only that file can follow it
+- Flag uncertainty explicitly: "this is well-established" vs. "this is
+  speculative" vs. "I couldn't find good sources on this"
+- When updating an existing doc, add a dated note at the top rather than
+  silently changing content
+
+## Code Conventions
+
+<!-- If this is also a build project. Delete this section if research-only. -->
+- Language / framework: [your stack]
+- Test framework: [your test setup]
+- Style: [any preferences — formatting, naming, structure]
+
+## What's Next
+
+<!-- Current priorities. What should the agent work on if asked without
+     further direction? Update this after every session. -->

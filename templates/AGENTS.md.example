@@ -1,0 +1,45 @@
+# [Project Name] — Agent Guide
+
+<!-- This is an example AGENTS.md for OpenAI Codex CLI, Gemini Code Assist,
+     or any other agentic tool that reads a project instruction file.
+
+     Codex CLI reads AGENTS.md from the repo root automatically.
+     Gemini may read .gemini/styleguide.md or GEMINI.md depending on setup.
+     Other agents: check your tool's docs for the instruction file location.
+
+     The content is identical to CLAUDE.md — only the filename differs.
+     If you use multiple agents on the same repo, symlink:
+       ln -s CLAUDE.md AGENTS.md
+-->
+
+## What This Project Is
+
+<!-- 2-3 sentences. What are you researching or building? -->
+
+## Current State
+
+<!-- What exists so far. -->
+
+## My Background
+
+<!-- What you know, what you don't. -->
+
+## Research Conventions
+
+- Write all research output to `docs/research/` as numbered markdown files
+- Cite all sources with inline markdown links
+- Use tables for comparisons
+- Each file should stand alone with sufficient context
+- Flag uncertainty explicitly
+- When updating existing docs, add dated notes rather than silent edits
+
+## Code Conventions
+
+<!-- Delete if research-only. -->
+- Language / framework: [your stack]
+- Test framework: [your test setup]
+- Style: [any preferences]
+
+## What's Next
+
+<!-- Current priorities. Update after every session. -->
