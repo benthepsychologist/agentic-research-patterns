@@ -60,7 +60,7 @@ Run the conversation interactively. When the document is solid, copy it to `docs
 
 The initiation document includes a research plan — a sequence of numbered passes. This is your roadmap. Each pass has a focus, questions, and an expected output file.
 
-Here's the generic shape. The [templates](templates/) customize this for market research, scientific research, and red-teaming.
+Here's the generic shape. The [templates](../templates/) customize this for market research, scientific research, and red-teaming.
 
 | Pass | Focus | Output |
 |------|-------|--------|

@@ -136,4 +136,4 @@ agentic-research-patterns/
 git add -A && git commit -m "setup: repo structure and agent instructions"
 ```
 
-You're ready for [Project Initiation](02-project-initiation.md).
+You're ready for [Project Initiation](project-initiation.md).
