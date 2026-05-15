@@ -1,0 +1,526 @@
+[
+  {
+    "id": "hitl-2021-prisma-statement",
+    "type": "article-journal",
+    "title": "The PRISMA 2020 statement: an updated guideline for reporting systematic reviews",
+    "URL": "https://www.bmj.com/content/372/bmj.n71",
+    "DOI": "10.1136/bmj.n71",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          29
+        ]
+      ]
+    },
+    "note": "evidence_tier: T1\ncluster: evidence_synthesis_standards\nmethod_tags: systematic_review,reporting_standard\nhitl_role: oversight\nlimitations: Reporting standard, not execution workflow spec\nuse_for: baseline quality reporting requirements\ndo_not_use_for: direct agent orchestration design\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2021-prisma-eande",
+    "type": "article-journal",
+    "title": "PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews",
+    "URL": "https://www.bmj.com/content/372/bmj.n160",
+    "DOI": "10.1136/bmj.n160",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "note": "evidence_tier: T1\ncluster: evidence_synthesis_standards\nmethod_tags: systematic_review,reporting_standard\nhitl_role: oversight\nlimitations: health-oriented emphasis\nuse_for: implementation details for checklist items\ndo_not_use_for: runtime HITL control logic\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2024-cochrane-handbook-v65",
+    "type": "webpage",
+    "title": "Cochrane Handbook for Systematic Reviews of Interventions (Version 6.5, 2024)",
+    "URL": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "note": "evidence_tier: T1\ncluster: evidence_synthesis_standards\nmethod_tags: systematic_review,methodology\nhitl_role: validation\nlimitations: focused on intervention reviews\nuse_for: rigorous evidence synthesis methods\ndo_not_use_for: general product-market workflow design\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2026-entropy-hitl-review",
+    "type": "article-journal",
+    "title": "Human-in-the-Loop Artificial Intelligence: A Systematic Review of Concepts, Methods, and Applications",
+    "URL": "https://www.mdpi.com/1099-4300/28/4/377",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T2\ncluster: hitl_foundations\nmethod_tags: systematic_review,hitl\nhitl_role: oversight,validation,adjudication\nlimitations: inclusion boundaries from source search strategy\nuse_for: concept map and cross-domain HITL roles\ndo_not_use_for: specific workflow implementation details\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2021-hitl-nlp-survey",
+    "type": "article",
+    "title": "Putting Humans in the Natural Language Processing Loop: A Survey",
+    "URL": "https://arxiv.org/abs/2103.04044",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "note": "evidence_tier: T3\ncluster: hitl_foundations\nmethod_tags: survey,nlp\nhitl_role: feedback,correction\nlimitations: preprint status and NLP focus\nuse_for: historical grounding of HITL paradigms\ndo_not_use_for: standalone policy claims\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2025-llm-hitl-extraction",
+    "type": "article",
+    "title": "LLM + HITL extraction for systematic reviews",
+    "URL": "https://arxiv.org/abs/2501.11840",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "note": "evidence_tier: T3\ncluster: llm_hitl_systematic_review_ops\nmethod_tags: extraction,screening,llm\nhitl_role: verification,exception_handling\nlimitations: preprint\nuse_for: operational patterns in review pipelines\ndo_not_use_for: settled efficacy estimates\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2026-lr-robot",
+    "type": "article",
+    "title": "LR-Robot HITL framework for systematic literature reviews",
+    "URL": "https://arxiv.org/abs/2604.14793",
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "note": "evidence_tier: T3\ncluster: llm_hitl_systematic_review_ops\nmethod_tags: workflow,systematic_review\nhitl_role: oversight,adjudication\nlimitations: preprint\nuse_for: pass decomposition ideas for SLR automation\ndo_not_use_for: generalized cross-domain proof\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2026-langgraph-hitl-tutorial",
+    "type": "webpage",
+    "title": "Add human-in-the-loop (LangGraph tutorial)",
+    "URL": "https://langchain-ai.lang.chat/langgraph/tutorials/get-started/4-human-in-the-loop/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: framework_implementation_docs\nmethod_tags: orchestration,interrupt,resume\nhitl_role: approval,edit\nlimitations: framework-specific\nuse_for: concrete runtime control patterns\ndo_not_use_for: methodological superiority claims\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-2026-langgraph-platform-hitl",
+    "type": "webpage",
+    "title": "Human-in-the-loop using server API - LangGraph Docs",
+    "URL": "https://docs.langchain.com/langgraph-platform/add-human-in-the-loop",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: framework_implementation_docs\nmethod_tags: approval,tool_call_review\nhitl_role: approval,exception_handling\nlimitations: vendor docs\nuse_for: implementation checklists and API primitives\ndo_not_use_for: broad external validity claims\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-openalex-api",
+    "type": "webpage",
+    "title": "OpenAlex API documentation",
+    "URL": "https://docs.openalex.org/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-crossref-rest",
+    "type": "webpage",
+    "title": "Crossref REST API",
+    "URL": "https://api.crossref.org/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-semantic-scholar-api",
+    "type": "webpage",
+    "title": "Semantic Scholar API",
+    "URL": "https://api.semanticscholar.org/api-docs/graph",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-eutils",
+    "type": "webpage",
+    "title": "NCBI E-utilities",
+    "URL": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-dimensions-guide",
+    "type": "webpage",
+    "title": "Dimensions API guides",
+    "URL": "https://docs.dimensions.ai/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-wos",
+    "type": "webpage",
+    "title": "Web of Science APIs",
+    "URL": "https://developer.clarivate.com/apis",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-scopus",
+    "type": "webpage",
+    "title": "Scopus APIs",
+    "URL": "https://dev.elsevier.com/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-rayyan",
+    "type": "webpage",
+    "title": "Rayyan systematic review tool",
+    "URL": "https://www.rayyan.ai/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-covidence",
+    "type": "webpage",
+    "title": "Covidence systematic review software",
+    "URL": "https://www.covidence.org/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-eppi",
+    "type": "webpage",
+    "title": "EPPI-Reviewer",
+    "URL": "https://eppi.ioe.ac.uk/cms/Default.aspx?tabid=2914",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-distiller",
+    "type": "webpage",
+    "title": "DistillerSR",
+    "URL": "https://www.evidencepartners.com/products/distillersr-systematic-review-software/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-target-robotreviewer",
+    "type": "webpage",
+    "title": "RobotReviewer",
+    "URL": "https://www.robotreviewer.net/",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T4\ncluster: evaluation_and_failure_modes\nmethod_tags: source_index\nhitl_role: oversight\nlimitations: collection target; metadata to verify\nuse_for: deep-dive source expansion\ndo_not_use_for: direct claims before verification\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q001",
+    "type": "dataset",
+    "title": "Query plan: human in the loop artificial intelligence systematic review",
+    "URL": "",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: hitl_foundations\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q001",
+    "type": "dataset",
+    "title": "Query plan: human in the loop artificial intelligence systematic review",
+    "URL": "query://q001",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: hitl_foundations\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q002",
+    "type": "dataset",
+    "title": "Query plan: human-in-the-loop machine learning survey",
+    "URL": "query://q002",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: hitl_foundations\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q003",
+    "type": "dataset",
+    "title": "Query plan: llm assisted systematic review screening human validation",
+    "URL": "query://q003",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: llm_hitl_systematic_review_ops\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q004",
+    "type": "dataset",
+    "title": "Query plan: automated evidence extraction llm human in loop",
+    "URL": "query://q004",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: llm_hitl_systematic_review_ops\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q005",
+    "type": "dataset",
+    "title": "Query plan: multi-agent reflection critique planning framework",
+    "URL": "query://q005",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: agentic_workflow_patterns\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q006",
+    "type": "dataset",
+    "title": "Query plan: agent orchestration interrupt human approval",
+    "URL": "query://q006",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: agentic_workflow_patterns\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q007",
+    "type": "dataset",
+    "title": "Query plan: hallucination mitigation human oversight llm",
+    "URL": "query://q007",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: evaluation_and_failure_modes\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q008",
+    "type": "dataset",
+    "title": "Query plan: PRISMA 2020 checklist reporting guideline",
+    "URL": "query://q008",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: evidence_synthesis_standards\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q009",
+    "type": "dataset",
+    "title": "Query plan: Cochrane handbook automation systematic reviews",
+    "URL": "query://q009",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: evidence_synthesis_standards\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q010",
+    "type": "dataset",
+    "title": "Query plan: LangGraph human in the loop",
+    "URL": "query://q010",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: framework_implementation_docs\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q011",
+    "type": "dataset",
+    "title": "Query plan: LlamaIndex workflow human feedback",
+    "URL": "query://q011",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: framework_implementation_docs\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q012",
+    "type": "dataset",
+    "title": "Query plan: Haystack human in the loop pipeline",
+    "URL": "query://q012",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: framework_implementation_docs\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q013",
+    "type": "dataset",
+    "title": "Query plan: RLHF survey human feedback large language models",
+    "URL": "query://q013",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: oversight_alignment\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q014",
+    "type": "dataset",
+    "title": "Query plan: RLAIF constitutional AI oversight",
+    "URL": "query://q014",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: oversight_alignment\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  },
+  {
+    "id": "hitl-query-q015",
+    "type": "dataset",
+    "title": "Query plan: production human-in-the-loop agent approval workflow",
+    "URL": "query://q015",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "note": "evidence_tier: T5\ncluster: practitioner_playbooks\nmethod_tags: to_tag\nhitl_role: to_tag\nlimitations: to_fill\nuse_for: to_fill\ndo_not_use_for: to_fill\naccessed_date: 2026-05-15"
+  }
+]

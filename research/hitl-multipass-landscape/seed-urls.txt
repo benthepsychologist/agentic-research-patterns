@@ -1,0 +1,8 @@
+# Standards
+https://www.prisma-statement.org/
+# HITL / surveys
+https://www.mdpi.com/1099-4300/28/4/377
+https://arxiv.org/abs/2501.11840
+https://arxiv.org/abs/2604.14793
+# Agent workflow docs
+https://langchain-ai.github.io/langgraph/how-tos/human_in_the_loop/add-human-in-the-loop/
