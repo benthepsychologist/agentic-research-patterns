@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "created": "2026-05-15",
+  "objective": "Build 300+ citation landscape for HITL multi-pass research.",
+  "queries": [
+    {"id":"q001","cluster":"hitl_foundations","q":"human in the loop artificial intelligence systematic review"},
+    {"id":"q002","cluster":"hitl_foundations","q":"human-in-the-loop machine learning survey"},
+    {"id":"q003","cluster":"llm_hitl_systematic_review_ops","q":"llm assisted systematic review screening human validation"},
+    {"id":"q004","cluster":"llm_hitl_systematic_review_ops","q":"automated evidence extraction llm human in loop"},
+    {"id":"q005","cluster":"agentic_workflow_patterns","q":"multi-agent reflection critique planning framework"},
+    {"id":"q006","cluster":"agentic_workflow_patterns","q":"agent orchestration interrupt human approval"},
+    {"id":"q007","cluster":"evaluation_and_failure_modes","q":"hallucination mitigation human oversight llm"},
+    {"id":"q008","cluster":"evidence_synthesis_standards","q":"PRISMA 2020 checklist reporting guideline"},
+    {"id":"q009","cluster":"evidence_synthesis_standards","q":"Cochrane handbook automation systematic reviews"},
+    {"id":"q010","cluster":"framework_implementation_docs","q":"LangGraph human in the loop"},
+    {"id":"q011","cluster":"framework_implementation_docs","q":"LlamaIndex workflow human feedback"},
+    {"id":"q012","cluster":"framework_implementation_docs","q":"Haystack human in the loop pipeline"},
+    {"id":"q013","cluster":"oversight_alignment","q":"RLHF survey human feedback large language models"},
+    {"id":"q014","cluster":"oversight_alignment","q":"RLAIF constitutional AI oversight"},
+    {"id":"q015","cluster":"practitioner_playbooks","q":"production human-in-the-loop agent approval workflow"}
+  ]
+}
