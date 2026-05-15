@@ -32,8 +32,9 @@ positions → methods/limitations → reading list + gap map → synthesis.
 
 ## Status
 
-- Pass 0 (initiation): drafted — see [`docs/initiation.md`](docs/initiation.md)
-- Pass 1+ : not started
+- Pass 0 (initiation): done — see [`docs/initiation.md`](docs/initiation.md)
+- Pass 1 (field map): done — see [`docs/research/01-field-map.md`](docs/research/01-field-map.md)
+- Pass 2+ : not started
 
 ## Entry Points
 
