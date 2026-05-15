@@ -1,8 +1,9 @@
 # Initiation — Deep Research with Agents
 
 **Project:** Deep Research with Agents and Agent Harnesses
-**Mode:** Literature and thought exploration (not product review)
-**Depth:** Heavy (~8 passes)
+**Mode:** Literature and thought exploration — academic *and* hacker / AI-engineering registers. Not a product review.
+**Pattern:** [`scientific-research`](../../../patterns/scientific-research.md), adapted for mixed-register sources
+**Depth:** Heavy — 7 passes (Pass 0 + six substantive)
 **Stakes:** Exploratory — no deadline
 **Started:** 2026-05-15
 **Owner:** ben (with Claude as research partner)
@@ -33,6 +34,14 @@ The investigation has two intertwined strands:
   checkpoints — contribute to or subtract from that effectiveness?
 
 We expect these to be separable in literature but inseparable in practice.
+
+This is not a strict-academic literature review. The communities with the
+most to say about agentic deep research live in mixed registers — peer-reviewed
+papers and conference talks, but also framework repos, post-mortems, podcast
+transcripts, harness source code, and blog posts that have been more
+influential than most papers. All of them have standing here. We use
+**confidence labels rather than credential gates** to separate signal from
+noise.
 
 ---
 
@@ -123,9 +132,10 @@ Eight research questions, ordered roughly by dependence:
    project vs. a team practice vs. an organizational capability? Are the
    patterns scale-invariant or do new ones appear at each level?
 
-8. **Repo claims audit.** Which of the ten principles in `principles.md`
-   survive the literature, which are unsupported folklore, and which are
-   demonstrably wrong or overstated?
+8. **Camp positioning.** Where does the repo's existing framing sit among
+   the camps the field map identifies? What positions exist that the repo
+   hasn't named? *Neutral positioning, not audit — auditing the repo is a
+   different project.*
 
 ---
 
@@ -140,9 +150,13 @@ Eight research questions, ordered roughly by dependence:
 - Practitioner playbooks and dated reports from labs and individual
   researchers.
 - Standards-body documents (PRISMA, Cochrane, JBI, etc.).
+- **Framework source code, READMEs, and design notes** from agent-harness
+  projects (LangGraph, AutoGen, CrewAI, Claude Code, Codex, Aider, Cursor,
+  etc.) treated as primary evidence for the harness strand — not secondary
+  documentation.
+- **Conference talks, podcast transcripts, and influential blog posts**
+  where most of the AI-engineering iteration is actually being recorded.
 - Skeptical and critical voices on agentic research and LLM epistemics.
-- Comparative inspection of agent harnesses *insofar as their design
-  choices have research-quality consequences*.
 - The repo's own prior landscape (`hitl-multipass-landscape/`).
 
 ### Out of scope
@@ -169,92 +183,99 @@ Eight research questions, ordered roughly by dependence:
 
 ## 5. Research Plan
 
-Eight passes. Each has one job. Each writes to a named artifact.
+Built on the [`scientific-research`](../../../patterns/scientific-research.md)
+pattern — neutral exploration, not adversarial review. Seven passes
+(0 through 6). Each has one job. Each writes to a named artifact.
 
 | Pass | Focus | Output |
 |------|-------|--------|
 | 0 | Initiation — this document | `docs/initiation.md` |
-| 1 | Broad collection — sources across modalities and decades | `docs/research/01-collection.md` + `evidence-registry.csl.json` |
-| 2 | Normalization + cluster taxonomy lock | `docs/research/02-clusters.md` |
-| 3 | Cluster deep dives — one brief per cluster | `docs/research/03-cluster-briefs/` |
-| 4 | Cross-cluster comparison — tensions, agreements, gaps | `docs/research/04-cross-cluster.md` |
-| 5 | Pattern extraction — what predicts effective deep research? | `docs/research/05-patterns.md` |
-| 6 | Red-team — stress-test the repo's principles and our emerging patterns | `docs/research/06-red-team.md` |
-| 7 | Synthesis essay — integrated thought piece | `docs/synthesis.md` |
-| 8 | State-of-knowledge + reflection — what we now believe, what remains open, how the repo should evolve | `docs/state-of-knowledge.md` |
+| 1 | Field map — communities, camps, terminology, central voices | `docs/research/01-field-map.md` |
+| 2 | Core evidence review — what each camp actually claims, with sources | `docs/research/02-core-evidence.md` + `evidence-registry.{csl.json,yaml}` |
+| 3 | Competing positions — where the camps disagree about what "effective" means | `docs/research/03-competing-positions.md` |
+| 4 | Methods and limitations — how each tradition measures research quality and where measurement breaks | `docs/research/04-methods-limitations.md` |
+| 5 | Reading list + gap map — what's missing, what's open, what to read next | `docs/research/05-reading-list-gaps.md` |
+| 6 | Synthesis essay — integrated thought piece with confidence labels | `docs/synthesis.md` |
 
-### Pass 1 — Broad collection
+### Pass 1 — Field map
 
-- **Focus:** cast wide; collect foundational + recent sources across all
-  communities named in §2.
-- **Key questions:** What exists? Who's writing about this? What
-  terminologies are in play? What standards documents are canonical?
-- **Output:** annotated source list + draft evidence registry (CSL-JSON +
-  YAML mirror, following `hitl-multipass-landscape/` conventions).
-- **Inclusion bias to watch:** practitioner-blog inflation. Aim for at
-  least 40% T1/T2 academic and standards sources.
+- **Focus:** cast wide; identify the communities and camps doing this work,
+  their central voices, and the words they use for the same things.
+- **Key questions:** Who's actually doing this work? Where do they publish
+  (papers, blogs, frameworks, conference talks, GitHub)? What's the working
+  vocabulary in each camp? Which camps cite each other and which don't?
+- **Output:** named camps, central voices per camp, terminology glossary,
+  and a sketch of citation reach across camps.
+- **Note:** this is a map, not yet an evidence review. We're sketching the
+  territory, not committing to claims.
 
-### Pass 2 — Normalization + cluster taxonomy
+### Pass 2 — Core evidence review
 
-- **Focus:** deduplicate, normalize metadata, lock the cluster taxonomy
-  we'll use through Pass 3+.
-- **Key questions:** What are the natural joints? Do existing clusters
-  from `hitl-multipass-landscape/` (`evidence_synthesis_standards`,
-  `hitl_foundations`, `agentic_workflow_patterns`, etc.) suffice, or does
-  this broader topic need different ones?
-- **Output:** finalized cluster map; cleaned registry.
+- **Focus:** collect what each camp actually says, with citations.
+- **Key questions:** What are the central claims? What references do
+  members of each camp cite — papers, framework docs, harness source code,
+  conference talks, canonical blog posts? What's the strongest piece of
+  evidence behind each claim?
+- **Output:** core-evidence summary keyed by camp; evidence registry
+  (CSL-JSON + YAML mirror) accumulated as we go, following
+  `hitl-multipass-landscape/` conventions but loosened — peer-reviewed
+  papers and well-cited blog posts both count. A widely-reproduced
+  framework pattern is evidence; so is a one-off paper. Label confidence,
+  don't gate on credential.
 
-### Pass 3 — Cluster deep dives
+### Pass 3 — Competing positions
 
-- **Focus:** one brief per cluster summarizing consensus, disagreements,
-  and maturity.
-- **Key questions per cluster:** Who are the central authors? What's
-  settled? What's contested? What's the strongest evidence?
-- **Output:** one markdown file per cluster under
-  `docs/research/03-cluster-briefs/`.
+- **Focus:** where the camps disagree.
+- **Key questions:** What does "effective" mean to each camp?
+  Multi-agent vs single-agent? HITL-heavy vs autonomous? File-system
+  state vs in-context vs vector? Markdown-discipline vs free-form?
+  Sub-agents-as-tools vs sub-agents-as-peers? Where are these *real
+  positions* and where are they *fashions of the moment*?
+- **Output:** for each axis of disagreement, name the camps, their
+  claims, and the evidence (such as it is) for each side. Where the
+  disagreement is unresolved, say so.
 
-### Pass 4 — Cross-cluster comparison
+### Pass 4 — Methods and limitations
 
-- **Focus:** find tensions and agreements across communities.
-- **Key questions:** Where do systematic-review methodologists and
-  LLM-agent researchers talk past each other? Where do they
-  unknowingly agree? Which questions have answers in one community that
-  the other hasn't noticed?
+- **Focus:** how each tradition measures whether research is good, and
+  where measurement breaks down.
+- **Key questions:** Systematic-review folks have PRISMA-style coverage
+  and inter-rater agreement. Intelligence analysts have structured
+  analytic techniques. AI-engineering folks have evals, ablations, and
+  user studies. What does each method actually measure? What's
+  measurable about agent-mediated deep research and what isn't? Where do
+  measurement methods from one camp fail when applied to another?
 
-### Pass 5 — Pattern extraction
+### Pass 5 — Reading list + gap map
 
-- **Focus:** what *predicts* effective deep research with agents?
-- **Key questions:** Pass count? Pass shape? HITL frequency? Externalized
-  state? Source-tier discipline? Adversarial review? Or is the predictor
-  something the repo hasn't named?
+- **Focus:** what's missing.
+- **Key questions:** What hasn't been written about? Where are camps
+  talking past each other unproductively? What experiments haven't been
+  run that easily could be? What sources we couldn't find but suspect
+  exist?
+- **Output:** a follow-up reading list (for a future pass or future
+  reader), plus a named-gap map.
 
-### Pass 6 — Red-team
+### Pass 6 — Synthesis essay
 
-- **Focus:** stress-test the repo's `principles.md` and our emerging
-  patterns from Pass 5.
-- **Key questions:** Which principles are unfalsifiable? Which conflate
-  multiple claims? Which are domain-bound but stated as universal? What's
-  the strongest steel-manned counter-position?
-
-### Pass 7 — Synthesis essay
-
-- **Focus:** a thought piece that integrates Passes 1–6 into a coherent
-  position on effective agentic deep research.
-- **Constraint:** must name what is settled, what is contested, what is
-  open. No false certainty.
-
-### Pass 8 — State-of-knowledge + repo reflection
-
-- **Focus:** what do we now believe? What's open? How should the
-  surrounding repo evolve in light of the findings?
-- **Note:** this is *reflection*, not a redesign mandate. Downstream
-  decisions about the repo are separate work.
+- **Focus:** integrate Passes 1–5 into a coherent essay on effective
+  agentic deep research.
+- **Constraints:**
+  - Name what's settled, what's contested, what's open.
+  - Confidence-label each claim: *well-evidenced*, *practitioner
+    consensus*, *single source*, *speculation*.
+  - No false universals — note when a claim is camp-specific.
+  - Where the essay touches the repo's existing framings, position them
+    among the camps neutrally. Audit is a separate project.
 
 ### State-of-knowledge checkpoints
 
-Per the [project-initiation guide](../../guides/project-initiation.md),
-write a state-of-knowledge review after Pass 2 and Pass 5. If a review
-reveals plan drift, update this document.
+Per the [project-initiation guide](../../../guides/project-initiation.md),
+write a state-of-knowledge review after **Pass 2** (after we have the
+field map and core evidence — natural checkpoint to test scope) and
+**Pass 4** (after methods/limitations — natural checkpoint before
+narrowing to gaps and synthesis). If a review reveals plan drift, update
+this document.
 
 ---
 
@@ -262,26 +283,28 @@ reveals plan drift, update this document.
 
 We're done when:
 
-- **Coverage.** Evidence registry has at least ~150 entries across all
-  clusters, with no cluster under-represented (≥10 sources). At least
-  40% T1/T2 by tier.
-- **Tier discipline.** Every claim in cluster briefs and the synthesis
-  essay maps to one or more registered source IDs with explicit tier.
-- **Stress-test depth.** Pass 6 produces at least one defensible
-  counter-position per repo principle, with sources behind it.
-- **Calibrated synthesis.** The Pass 7 essay names ≥10 settled findings,
-  ≥10 open or contested questions, and ≥5 areas where the repo's current
-  framings appear over-confident or under-supported.
-- **Repo audit.** Pass 8 identifies, with evidence, at least:
-  - 3 principles in `principles.md` that survive intact
-  - 2 that need qualification
-  - 2 patterns the repo currently lacks but should consider
-- **Re-readable.** A new reader could pick up `docs/synthesis.md` and
-  understand the position, the evidence behind it, and what remains
-  uncertain — without reading every prior pass.
+- **Camp coverage.** Field map names ≥6 distinct communities or camps,
+  each with central voices and entry-point sources. No major camp known
+  to exist is missing from the map.
+- **Source diversity.** Evidence registry includes a mix of peer-reviewed
+  papers, framework source and design notes, harness writeups, practitioner
+  blog posts, conference/podcast transcripts, standards documents, and
+  skeptical voices. No camp represented by only one source *type*.
+- **Confidence labels over credential gates.** Every claim in Passes 2–4
+  maps to a registered source ID *and* a confidence label
+  (well-evidenced / practitioner consensus / single source / speculation).
+  Practitioner sources are not gated out; folklore claims are not
+  laundered in.
+- **Calibrated synthesis.** Pass 6 essay names ≥10 places the camps
+  appear to agree, ≥5 places where camps disagree and the disagreement
+  remains live, and ≥5 open questions no camp has answered.
+- **Reusable for the next reader.** Someone picking up `docs/synthesis.md`
+  understands the camps, the disagreements, where to read further, and
+  what's still uncertain — without reading every prior pass.
 
 The project is *not* done just because all passes have been written. It
-is done when the evidence in the registry can defend the synthesis.
+is done when the synthesis essay holds up to a sympathetic-skeptical
+re-read against the evidence registry behind it.
 
 ---
 
@@ -293,40 +316,52 @@ Naming likely failure modes up front so later passes can red-team them.
 
 - **Confirmation bias.** The repo already encodes a position. We will be
   tempted to find evidence that confirms `principles.md` and ignore
-  evidence that complicates it. Mitigation: Pass 6 explicitly steel-mans
-  counter-positions; Pass 1 inclusion rules require some skeptical
-  sources.
+  evidence that complicates it. Mitigation: Pass 3 (competing positions)
+  explicitly names camps the repo doesn't currently align with and
+  represents their best case.
 - **Self-referential audit illusion.** Using the repo's own patterns to
-  research the repo's own topic can launder its claims as findings.
-  Mitigation: name this risk in Pass 7; require Pass 6 to attempt
-  external-method critique of the very methods used here.
+  research the repo's topic can launder the repo's claims as findings.
+  Mitigation: in Pass 6, any claim that aligns with the repo's existing
+  principles must cite at least one source produced *outside* the
+  repo's authorial orbit.
 - **Recency bias.** 2024–2026 LLM-agent papers will outnumber 1990s–2010s
-  IR/HCI foundations in raw count. Mitigation: explicit quota in Pass 1
-  for pre-2020 foundational work.
+  IR / HCI / sensemaking foundations in raw count. Mitigation: Pass 1
+  field map deliberately includes pre-2020 foundational communities, not
+  just recent ones.
 - **Practitioner-blog inflation.** Blog posts and platform docs are easy
-  to find and feel current. Mitigation: T4/T5 sources allowed but flagged
-  and capped at 60% of registry.
+  to find and feel current. Mitigation: flag with confidence labels, not
+  by exclusion. A practitioner post that's been re-implemented in three
+  frameworks is stronger evidence than a paper nobody has built on.
+- **Tier snobbery (the opposite mistake).** Dismissing practitioner work
+  because it isn't peer-reviewed, when much of the actual experimentation
+  on agent harnesses lives in repos, conference talks, and blogs.
+  Mitigation: mixed registry by design; confidence labels not credential
+  gates; framework source code treated as primary evidence.
 - **Anglophone monoculture.** Most accessible literature is English.
-  Mitigation: note as a limitation; flag in Pass 8.
+  Mitigation: note as a limitation in the synthesis; flag explicitly in
+  the gap map.
 - **Tool-coupling.** Easy to write as if Claude Code / Codex–style
-  harnesses are the universe. Mitigation: include chat-only, autonomous,
-  multi-agent, and non-LLM-agent (older HCI tool-augmented research)
-  references.
+  harnesses are the universe. Mitigation: Pass 1 field map must include
+  chat-only, autonomous, multi-agent, and pre-LLM tool-augmented research
+  traditions.
 
 ### Process risks
 
 - **Pass bleed.** Search and synthesis collapsing into one pass.
   Mitigation: enforced by the pass sequence above; checkpoint reviews
   catch drift.
-- **Premature convergence.** Settling on the cluster taxonomy too early.
-  Mitigation: lock taxonomy only at Pass 2, after Pass 1's broad sweep.
+- **Premature convergence.** Settling on a camp taxonomy too early.
+  Mitigation: Pass 1 is a map, not a commitment. Camps can be merged,
+  split, or renamed up to Pass 3.
 - **Scope creep into product review.** This is *not* a critique of the
-  repo. The repo audit is a small reflection in Pass 8. Mitigation:
-  re-read §4 (scope) before each pass.
+  repo. Q8 is *positioning*, not audit. Mitigation: re-read §4 (scope)
+  before each pass; if a pass starts grading `principles.md`, stop and
+  re-scope.
 - **Stopping too late.** "One more source" is always tempting.
   Mitigation: §6 success criteria are concrete; when they're met, stop.
 - **Stopping too early.** Reading a few practitioner playbooks and
-  declaring victory. Mitigation: coverage and tier thresholds in §6.
+  declaring victory. Mitigation: camp-coverage and source-diversity
+  thresholds in §6.
 
 ### Epistemic risks
 
@@ -348,14 +383,15 @@ Naming likely failure modes up front so later passes can red-team them.
 
 To revisit at the Pass 2 state-of-knowledge review:
 
-1. Is 8 passes the right number, or will Pass 3 (cluster deep dives) need
-   to split per cluster, expanding the total?
-2. Should Pass 6 (red-team) be done by a separately-instantiated agent
-   with no access to prior passes, to harden the adversarial role?
-3. Should the synthesis essay be one document or three (one per
+1. Is 7 passes the right depth, or does Pass 3 (competing positions) need
+   to split per axis-of-disagreement if it gets large?
+2. Should the synthesis essay be one document, or three (one per
    audience: methodologist, harness designer, practitioner)?
-4. Do we need an explicit Pass for "non-Western / non-English research
-   traditions" or is calling out the limitation sufficient?
+3. Do we need explicit treatment of non-Western / non-English research
+   traditions, or is naming the limitation sufficient?
+4. Should the evidence registry be published as a standalone artifact
+   before the synthesis essay is done? (Hacker-register move: ship the
+   sources, let others build on them.)
 
 ---
 

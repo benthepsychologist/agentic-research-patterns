@@ -1,29 +1,38 @@
 # Deep Research with Agents — Landscape Project
 
-A literature and thought-exploration project investigating how to do deep
-research effectively with AI agents and agent harnesses.
+A literature and thought-exploration project on how to do deep research
+effectively with AI agents and agent harnesses. Mixed-register: academic
+*and* hacker / AI-engineering sources both count.
 
 ## Self-Referential Note
 
-This project applies the [`project-initiation`](../../patterns/project-initiation.md)
-pattern to the very topic the surrounding repo is about. The repo offers
-crystallized patterns for agentic research; this project tests those
-crystallizations against the broader literature, surfaces gaps, and produces
-a synthesis essay that stands on its own.
+This project applies one of the repo's own patterns ——
+[`project-initiation`](../../patterns/project-initiation.md) for Pass 0,
+then [`scientific-research`](../../patterns/scientific-research.md) for
+Passes 1–6 — to the very topic the surrounding repo is about. The repo
+already encodes a position; this project maps that position among the
+camps in the broader field.
+
+## Pattern
+
+Built on [`scientific-research`](../../patterns/scientific-research.md) —
+neutral exploration with confidence labels, not adversarial review.
+Seven passes: initiation → field map → core evidence → competing
+positions → methods/limitations → reading list + gap map → synthesis.
 
 ## Relationship to Prior Work in This Repo
 
 - [`research/hitl-multipass-landscape/`](../hitl-multipass-landscape/) — a
-  narrower landscape scan focused on human-in-the-loop checkpoints in
-  multi-pass research. Treated here as Pass 1 input, not duplicated.
-- [`principles.md`](../../principles.md) — the repo's current doctrine.
-  Pass 6 (red-team) will stress-test these against external literature.
-- [`scope.md`](../../scope.md) — the repo's stated scope. Informs what's
-  in/out of bounds here.
+  narrower scan focused on HITL checkpoints in multi-pass research.
+  Treated here as Pass 2 input, not duplicated.
+- [`principles.md`](../../principles.md) and
+  [`scope.md`](../../scope.md) — the repo's current framings.
+  Positioned among the camps in Pass 6 (synthesis), neutrally — not
+  audited.
 
 ## Status
 
-- Pass 0 (initiation): in progress — see [`docs/initiation.md`](docs/initiation.md)
+- Pass 0 (initiation): drafted — see [`docs/initiation.md`](docs/initiation.md)
 - Pass 1+ : not started
 
 ## Entry Points
